@@ -1,4 +1,4 @@
-# uuid-parse [![Build Status](https://secure.travis-ci.org/zefferus/uuid-parse.svg?branch=master)](http://travis-ci.org/zefferus/uuid-parse) #
+# uuid-parse [![Build Status](https://secure.travis-ci.org/zefferus/uuid-parse.svg?branch=parse)](http://travis-ci.org/zefferus/uuid-parse) #
 
 Simple, fast parsing and unparsing of [RFC4122](http://www.ietf.org/rfc/rfc4122.txt) UUIDS.
 
@@ -6,7 +6,7 @@ Features:
 
 * Parses and unparses UUIDs to and from Buffer to String
 
-## Quickstart - nodejs
+## Quickstart
 
 ```shell
 npm install uuid-parse
@@ -42,4 +42,4 @@ npm test
 
 ## Acknowledgments
 
-Please make sure to check out the repository that originated these functions: [node-uuid](https://github.com/kelektiv/node-uuid). These functions were removed from a recent version of the library and I wanted to make sure they were still exposed for the packages who were dependent on them.
+Please make sure to check out the repository that originated these functions: [node-uuid](https://github.com/kelektiv/node-uuid). These functions were removed from a recent version of that library and I wanted to make sure they were still exposed for the packages who were dependent on them.
