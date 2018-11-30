@@ -13,7 +13,7 @@ function parse(s, buf, offset) {
   const i = (buf && offset) || 0;
   let ii = 0;
 
-  buf = buf || [];
+  buf = buf || Buffer;
   s.toLowerCase().replace(/[0-9a-f]{2}/g, function(oct) {
     if (ii < 16) { // Don't overflow!
       buf[i + ii++] = _hexToByte[oct];
