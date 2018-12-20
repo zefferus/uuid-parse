@@ -10,8 +10,8 @@ for (var i = 0; i < 256; i++) {
 
 // **`parse()` - Parse a UUID into it's component bytes**
 function parse(s, buf, offset) {
-  const i = (buf && offset) || 0;
-  let ii = 0;
+  var i = (buf && offset) || 0;
+  var ii = 0;
 
   buf = buf || [];
   s.toLowerCase().replace(/[0-9a-f]{2}/g, function(oct) {
@@ -30,8 +30,8 @@ function parse(s, buf, offset) {
 
 // **`unparse()` - Convert UUID byte array (ala parse()) into a string**
 function unparse(buf, offset) {
-  let i = offset || 0;
-  const bth = _byteToHex;
+  var i = offset || 0;
+  var bth = _byteToHex;
   return  bth[buf[i++]] + bth[buf[i++]] +
           bth[buf[i++]] + bth[buf[i++]] + '-' +
           bth[buf[i++]] + bth[buf[i++]] + '-' +
@@ -43,6 +43,6 @@ function unparse(buf, offset) {
 }
 
 module.exports = {
-  parse,
-  unparse
+  parse: parse,
+  unparse: unparse
 };
