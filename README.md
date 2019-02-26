@@ -1,5 +1,7 @@
 # uuid-parse [![Build Status](https://secure.travis-ci.org/zefferus/uuid-parse.svg?branch=parse)](http://travis-ci.org/zefferus/uuid-parse) #
 
+## NOTE: This module is no longer maintained
+
 Simple, fast parsing and unparsing of [RFC4122](http://www.ietf.org/rfc/rfc4122.txt) UUIDS.
 
 Features:

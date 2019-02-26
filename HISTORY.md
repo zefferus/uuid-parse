@@ -1,4 +1,7 @@
-# UNRELEASED
+# 1.1.0
+
+  * Downgraded to ES5-compatible code
+  * Marked as no longer maintained
 
 # 1.0.0
 
